@@ -13,12 +13,14 @@ import Error from "./components/error/error";
 const Root = () => (
   <HashRouter>
     <div className="parent-container">
-      <Link className="Title" to={"/"}>
+      <Link  to={"/"}>
+        <div className="Title">
         <img
           className="logo"
           src={"https://static.tvtropes.org/pmwiki/pub/images/bowser2.png"}
         />
-        Reddit B(r)owser
+        <div>Reddit B(r)owser</div>
+        </div>
       </Link>
       <Searchbar />
       <Switch>
