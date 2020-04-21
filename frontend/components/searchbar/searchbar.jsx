@@ -9,6 +9,7 @@ class Searchbar extends React.Component {
 
     };
     this.handleInput = this.handleInput.bind(this);
+    this.enterPressed = this.enterPressed.bind(this);
   }
   handleInput(type) {
       
@@ -21,14 +22,22 @@ class Searchbar extends React.Component {
           this.setState({text: " "})
       }
   }
+  enterPressed(event) {
+    var code = event.keyCode || event.which;
+    if (code === 13) { //13 is the enter keycode
+      event.preventDefault();
+      document.getElementById("myBtn").click();
+    }
+  }
   
 
   render() {
     return (
       <div className="searchbar-container">
-        <input className="searchbar-input" onChange={this.handleInput("text")} />
+        <input className="searchbar-input" onChange={this.handleInput("text")} onKeyPress={this.enterPressed} />
         &nbsp;&nbsp;
         <Link
+          id="myBtn"
           className="subreddits"
           to={`/subreddit//r/${this.state.text}`}
           onClick={this.checkInput.bind(this)}
