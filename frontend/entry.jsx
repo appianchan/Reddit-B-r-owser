@@ -13,8 +13,8 @@ import Error from "./components/error/error";
 const Root = () => (
   <HashRouter>
     <div className="parent-container">
-      <div className="Title">
-      <Link  to={"/"}>
+      
+        <Link className="Title" to={"/"}>
         
         <img
           className="logo"
@@ -23,7 +23,6 @@ const Root = () => (
         <div className="appname">Reddit B(r)owser</div>
         
       </Link>
-      </div>
       <Searchbar />
       <Switch>
         <Route exact path="/" component={Index} />
