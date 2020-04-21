@@ -23,8 +23,8 @@ class Searchbar extends React.Component {
       }
   }
   enterPressed(event) {
-    var code = event.keyCode || event.which;
-    if (code === 13) { //13 is the enter keycode
+    var code = event.which || event.keyCode;
+    if(code === 13){
       event.preventDefault();
       document.getElementById("myBtn").click();
     }

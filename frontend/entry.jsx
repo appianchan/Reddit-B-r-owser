@@ -26,7 +26,7 @@ const Root = () => (
       <Searchbar />
       <Switch>
         <Route exact path="/" component={Index} />
-        <Route exact path="/subreddit//r/:subreddit" component={Subreddit} />
+        <Route exact path="/subreddit/r/:subreddit" component={Subreddit} />
         <Route exact path="/error" component={Error} />
       </Switch>
     </div>
