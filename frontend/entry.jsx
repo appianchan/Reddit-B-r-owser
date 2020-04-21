@@ -13,15 +13,17 @@ import Error from "./components/error/error";
 const Root = () => (
   <HashRouter>
     <div className="parent-container">
+      <div className="Title">
       <Link  to={"/"}>
-        <div className="Title">
+        
         <img
           className="logo"
           src={"https://static.tvtropes.org/pmwiki/pub/images/bowser2.png"}
         />
-        <div>Reddit B(r)owser</div>
-        </div>
+        <div className="appname">Reddit B(r)owser</div>
+        
       </Link>
+      </div>
       <Searchbar />
       <Switch>
         <Route exact path="/" component={Index} />
