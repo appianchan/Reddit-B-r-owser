@@ -9,38 +9,31 @@ class Searchbar extends React.Component {
 
     };
     this.handleInput = this.handleInput.bind(this);
-    this.enterPressed = this.enterPressed.bind(this);
   }
   handleInput(type) {
-      
-        return (e) => {
-            this.setState({ [type]: e.target.value });
-        };
+
+    return (e) => {
+      this.setState({ [type]: e.target.value });
+    };
   }
-  checkInput(){
-      if(this.state.text === ""){
-          this.setState({text: " "})
-      }
-  }
-  enterPressed(event) {
-    var code = event.which || event.keyCode;
-    if(code === 13){
-      event.preventDefault();
-      document.getElementById("myBtn").click();
+  checkInput() {
+    if (this.state.text === "") {
+      this.setState({ text: " " })
     }
   }
-  
+
 
   render() {
+
     return (
       <div className="searchbar-container">
-        <input className="searchbar-input" onChange={this.handleInput("text")} onKeyPress={this.enterPressed} />
+        <input className="searchbar-input" onChange={this.handleInput("text")} />
         &nbsp;&nbsp;
         <Link
-          id="myBtn"
           className="subreddits"
-          to={`/subreddit//r/${this.state.text}`}
+          to={`/search/${this.state.text}`}
           onClick={this.checkInput.bind(this)}
+
         >
           Search for a subreddit!
         </Link>{" "}
