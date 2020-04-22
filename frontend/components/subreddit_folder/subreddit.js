@@ -15,11 +15,12 @@ class Subreddit extends React.Component {
 
 
   componentDidMount() {
-      console.log('rawr')
-      const url = window.location.href;
-      const n = url.search("subreddit");
+    const url = window.location.href;
+    const n = url.search("subreddit");
+    console.log(url.slice(n + 9));
+    
       const new_url =
-        "https://www.reddit.com" + url.slice(n + 10) + ".json" + "?limit=100";
+        "https://www.reddit.com" + url.slice(n + 9) + ".json" + "?limit=100";
         
       
         fetch(new_url)

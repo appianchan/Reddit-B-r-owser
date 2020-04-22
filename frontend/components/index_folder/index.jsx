@@ -30,7 +30,7 @@ class Index extends React.Component {
                   <div className="popular-subreddits">
                     <Link
                       className="subreddits"
-                      to={`/subreddit/${children[x].data.url}`}
+                      to={`/subreddit${children[x].data.url}`}
                     >
                       {children[x].data.title}
                     </Link>
