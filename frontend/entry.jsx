@@ -18,13 +18,13 @@ const Root = () => (
           className="logo"
           src={"https://static.tvtropes.org/pmwiki/pub/images/bowser2.png"}
         />
-        Reddit B(r)owser
+        <div className="appname">Reddit B(r)owser</div>
       </Link>
       <Searchbar />
       <Switch>
         <Route exact path="/" component={Index} />
         <Route path="/search/:topic" component={Search} />
-        <Route exact path="/subreddit//r/:subreddit" component={Subreddit} />
+        <Route exact path="/subreddit/r/:subreddit" component={Subreddit} />
         <Route exact path="/error" component={Error} />
       </Switch>
     </div>

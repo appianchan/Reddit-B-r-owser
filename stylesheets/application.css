@@ -64,6 +64,10 @@ html{
 }
 
 .appname{
+    margin-left: 50px;
+}
+
+.appname{
     display: inline-block;
     width: 61%;
     margin-left: 125px;
