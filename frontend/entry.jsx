@@ -18,7 +18,7 @@ const Root = () => (
           className="logo"
           src={"https://static.tvtropes.org/pmwiki/pub/images/bowser2.png"}
         />
-        Reddit B(r)owser
+        <div className="appname">Reddit B(r)owser</div>
       </Link>
       <Searchbar />
       <Switch>
