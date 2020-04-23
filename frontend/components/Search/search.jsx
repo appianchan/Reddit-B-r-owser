@@ -42,7 +42,7 @@ class Search extends React.Component{
                     <div className="searched-subreddits">
                         <Link
                             className="subreddits"
-                            to={`/subreddit/${children[x].data.url}`}
+                            to={`/subreddit${children[x].data.url}`}
                         >
                             {children[x].data.display_name_prefixed}
                         </Link>
