@@ -41,7 +41,7 @@ class Search extends React.Component{
                 arr.push(
                     <div className="searched-subreddits">
                         <Link
-                            className="subreddits"
+                            className="searched-subreddit-titles"
                             to={`/subreddit${children[x].data.url}`}
                         >
                             {children[x].data.display_name_prefixed}
