@@ -39,11 +39,32 @@ html{
     padding-top: 5px;
     text-decoration: none;
     color: rgb(7, 7, 141);
+    /* border-style: solid; */
+    /* border-color: black;
+    border-radius: 25px; */
 }
 
 .subreddits:hover{
     background-color: lightgreen;
 }
+.searchbar-button{
+    font-size: 25px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-decoration: none;
+    color: rgb(7, 7, 141);
+    border-style: solid;
+    border-color: black;
+    border-radius: 25px;
+    border-width: 1px;
+    padding: 4px;
+    
+}
+.searchbar-button:hover{
+    background-color: rgb(148, 148, 87);
+}
+
+
 .subreddits:active{
     background-color: green;
 }
@@ -156,4 +177,25 @@ html{
 .error_button{
     font-size: 50px;
     margin-left: 550px;
+}
+
+.search-title{
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.searched-subreddits{
+    margin-left: 40px;
+}
+
+.searched-subreddit-titles{
+    font-size: 25px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-decoration: none;
+    color: rgb(7, 7, 141);
+}
+
+.searched-subreddit-titles:hover{
+    background-color: orange;
 }
