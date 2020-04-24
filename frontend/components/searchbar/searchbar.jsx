@@ -39,7 +39,7 @@ class Searchbar extends React.Component {
         &nbsp;&nbsp;
         <Link
           id="myBtn"
-          className="subreddits"
+          className="searchbar-button"
           to={`/search/${this.state.text}`}
           onClick={this.checkInput.bind(this)}
 
