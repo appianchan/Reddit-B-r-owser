@@ -39,9 +39,9 @@ html{
     padding-top: 5px;
     text-decoration: none;
     color: rgb(7, 7, 141);
-    border-style: solid;
-    border-color: black;
-    border-radius: 25px;
+    /* border-style: solid; */
+    /* border-color: black;
+    border-radius: 25px; */
 }
 
 .subreddits:hover{
@@ -56,9 +56,12 @@ html{
     border-style: solid;
     border-color: black;
     border-radius: 25px;
+    border-width: 1px;
+    padding: 4px;
+    
 }
 .searchbar-button:hover{
-    background-color: yellow;
+    background-color: rgb(148, 148, 87);
 }
 
 
@@ -174,4 +177,9 @@ html{
 .error_button{
     font-size: 50px;
     margin-left: 550px;
+}
+
+.search-title{
+    font-size: 30px;
+    margin-left: 10px;
 }
