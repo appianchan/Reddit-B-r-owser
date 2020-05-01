@@ -195,6 +195,7 @@ html{
     padding-top: 5px;
     text-decoration: none;
     color: rgb(7, 7, 141);
+    border-radius: 4px;
 }
 
 .searched-subreddit-titles:hover{
