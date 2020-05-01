@@ -198,6 +198,12 @@ html{
     border-radius: 4px;
 }
 
+.searched-subreddit-titles:active{
+    background-color: rgb(12, 146, 41);
+}
+
+
+
 .searched-subreddit-titles:hover{
     background-color: orange;
 }
